@@ -1,0 +1,325 @@
+h1 {
+    font-weight: bold;
+    color: #32cd32;
+    text-align: center;
+    font-size: 45px;
+}
+h2 {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    font-size: 38px;
+}
+.features {
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    font-size: 30px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 10px;
+    width: 420px;
+    list-style-type: none;
+    height: 250px;
+    display: block;
+    margin: auto;
+    background-color: #8CFF98;
+
+}
+.link_no_underline {
+    text-decoration: none;
+    color: black;
+}
+.link_no_underline:hover {
+    color: darkred;
+}
+
+.category {
+    color: rebeccapurple;
+    font-size: 40px;
+
+}
+.main_categories {
+    display: inline-block;
+    margin: auto;
+
+}
+ul.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgrey;
+}
+
+ul.nav_bar li {
+    float: left;
+}
+
+
+ul.nav_bar li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: "Brush Script MT", cursive;
+}
+ul.nav_bar li.login_related {
+    float: right;
+}
+ul.nav_bar li a:hover {
+    background-color: darkred;
+}
+
+
+a.active {
+    background-color: #32cd32;
+}
+.active_home.active {
+    background-color: blue;
+}
+.thoughts_caption {
+    font-family: "Lucida Handwriting", cursive;
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+.posts_table th, .posts_table td{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-align: center;
+    color: black;
+    border: 1px solid grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.posts_table th {
+    background-color: #04AA6D;
+}
+.posts_table td {
+    color: black;
+    font-size: 18px;
+}
+.posts_table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 8px auto;
+}
+
+.posts_ref {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.posts_ref:hover {
+    color: darkred;
+}
+.posts_table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+a.paginator_refs {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+a.paginator_refs:hover {
+    background-color: darkred;
+}
+.pagination {
+    text-align: center;
+}
+.option_button {
+    text-align: center;
+}
+div .note_addition_button {
+    border-radius: 10px;
+    background-color: rebeccapurple;
+    padding: 14px 20px;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+}
+.note_addition_button:hover{
+    background-color: darkred;
+}
+.to_home {
+    text-align: center;
+    background-color: rebeccapurple;
+    margin: auto;
+}
+
+form {
+    background-color: #90ee90;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+label {
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+}
+input[type=text], textarea, input[type=file] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=submit]:hover {
+    background-color: darkred;
+}
+
+button[type=submit]:active {
+    background-color: green;
+}
+
+textarea {
+    resize: none;
+}
+ul.gallery_list_mapping {
+    list-style-type: none;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+ul.gallery_list_mapping li {
+    float: left;
+    margin: 15px;
+    text-align: center;
+}
+.image_display {
+    text-align: center;
+}
+.profile_form {
+    background-color: whitesmoke;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rebeccapurple;
+    margin: 0 auto;
+}
+.profile_form h2, .profile_form label {
+    margin: 5px;
+    border-radius: 10px;
+    text-align: left;
+    font-family: "Brush Script MT", cursive;
+    color: rebeccapurple;
+
+}
+
+.profile_form label {
+    font-size: 38px;
+}
+.profile_form p {
+    padding: 4px;
+    border: 2px solid rebeccapurple;
+    border-radius: 15px;
+    width: 25%;
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+form input[type="file"] {
+    display: none;
+}
+form .file-upload {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px 5px 5px 12px;
+    padding: 15px;
+    text-align: left;
+    cursor: wait;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 15px;
+}
+form .file-upload:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+.ava-display {
+    border: 2px solid rebeccapurple;
+    border-radius: 100px;
+    margin: 5px 5px 5px 0;
+    display: block;
+
+}
+
+form label {
+    color: rebeccapurple;
+}
+
+.profile_edit_goto {
+    margin: 0 0 0 91%;
+    text-align: left;
+    border: 1px solid black;
+    display: inline-block;
+    background-color: limegreen;
+    border-radius: 10px;
+
+}
+.profile_edit_goto:hover {
+    background-color: darkred;
+}
+.profile_edit_goto a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: "Brush Script MT", cursive;
+}
+
+.profile_form h1 {
+    color: green;
+}
+
+.switch_button_container {
+    text-align: center;
+}
+.switch_buttons {
+    margin: 10px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: limegreen;
+}
+.feature_topic {
+    display: inline;
+    color: rebeccapurple;
+    font-weight: bold;
+    border: 2px solid rebeccapurple;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+.goto_buttons {
+    width: 23px;
+    border-radius: 10px;
+}

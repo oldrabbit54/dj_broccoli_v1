@@ -1,0 +1,44 @@
+{% load static %}
+{% load posts_display %}
+<div class="mb-4 show-post">
+    <div class="mb-4">
+        <img src="{{ post.author.avatar.url }}" alt="" class="small-avatar">
+        <div class="post-info">
+            {{ post.author.first_name }} {{ post.author.last_name }}
+             <p class="post-time">{{ post.time_create|date:'d F, H:i ' }}</p>
+        </div>
+        {% if this_user_id and this_user_id == post.author.id %}
+            <a href="{% url 'note-update' post.id %}" class="post-edit">Edit</a>
+        {% endif %}
+    </div>
+    <hr>
+    <div class="mb-4">
+        <h1 style="margin: 0">{{ post.header }}</h1>
+    </div>
+    <div class="mb-4">
+        <p>{{ post.note }}</p>
+    </div>
+    <hr>
+    <div>
+        {% for comment in post.notes.all %}
+            <img src="{{ comment.author.avatar.url }} " alt="" class="small-avatar-comment">
+            <div class="comment-post">
+                <span>{{ comment.author.first_name }} {{ comment.author.last_name }}</span>
+                <p class="post-time" style="display: inline">{{ comment.time_create|date:'d F, H:i ' }}</p>
+                <p>{{ comment.text }}</p>
+
+            </div>
+            <hr>
+        {% endfor %}
+        <form class="comment-form">
+            <img src="{{ this_user.avatar.url }}" alt="" class="small-avatar-comment">
+            <input type="text" placeholder="leave a comment" name="text">
+            <a type="submit" class="comment-send" href="{{ add_comment_url|add_note_id:post.id}}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                </svg>
+            </a>
+        </form>
+    </div>
+</div>
+

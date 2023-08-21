@@ -1,0 +1,21 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% load my_filters %}
+{% block header %}Home{% endblock %}
+{% block content %}
+{% include 'main_menu/includes/main_page_carousel.html' %}
+{% endblock %}
+{% block static %}
+    <script>
+    let all_images = document.querySelectorAll('img');
+    let carousel = document.querySelector('.carousel');
+    carousel.style.width = "45%";
+    carousel.style.margin = "0 auto";
+    carousel.style.marginTop = "5%";
+    for(let image of all_images){
+        image.height = '350';
+    }
+
+    </script>
+    <script src="{% static 'main_menu/js/main_menu.js' %}"></script>
+{% endblock %}

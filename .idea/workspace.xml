@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e160d407-693a-4418-9d5d-79f52429460f" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2H8VlJhKVydwBTQsnzghRuEwsIs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/myBestDjangoProjects/broccoli",
+    "list.type.of.created.stylesheet": "CSS",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\myBestDjangoProjects\broccoli\static\main_menu\images" />
+      <recent name="C:\myBestDjangoProjects\broccoli\venv\Lib\site-packages" />
+      <recent name="C:\myBestDjangoProjects\broccoli\main_menu\static\main_menu\css" />
+      <recent name="C:\myBestDjangoProjects\broccoli\main_menu\static\main_menu\js" />
+      <recent name="C:\myBestDjangoProjects\broccoli\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\myBestDjangoProjects\broccoli\main_menu\templates\main_menu" />
+      <recent name="C:\myBestDjangoProjects\broccoli\main_menu" />
+      <recent name="C:\myBestDjangoProjects\broccoli" />
+      <recent name="C:\myBestDjangoProjects\broccoli\main_menu\templates\main_menu\includes" />
+      <recent name="C:\myBestDjangoProjects\broccoli\main_menu\static\main_menu\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="broccoli" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AppsAPI" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AppsAPI/api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="async_python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="broccoli" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/async_python.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="broccoli" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver 1970" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_main_menu" type="PythonConfigurationType" factoryName="Python">
+      <module name="broccoli" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\myBestDjangoProjects\broccoli\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="test main_menu" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="wdwd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="broccoli" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/templates" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/templates/wdwd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="broccoli" type="Python.DjangoServer" factoryName="Django server">
+      <module name="broccoli" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="broccoli.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Microsoft\WindowsApps\python3.10.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django Server.broccoli" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python.test_main_menu" />
+      <item itemvalue="Python.wdwd" />
+      <item itemvalue="Python.async_python" />
+      <item itemvalue="Python.api" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.async_python" />
+        <item itemvalue="Python.wdwd" />
+        <item itemvalue="Python.api" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e160d407-693a-4418-9d5d-79f52429460f" name="Changes" comment="" />
+      <created>1667666846176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667666846176</updated>
+      <workItem from="1667666847307" duration="64000" />
+      <workItem from="1667666984942" duration="163000" />
+      <workItem from="1667667166419" duration="2702000" />
+      <workItem from="1667669915999" duration="10305000" />
+      <workItem from="1667721897769" duration="6952000" />
+      <workItem from="1667752892710" duration="11215000" />
+      <workItem from="1667826568030" duration="19454000" />
+      <workItem from="1667886501184" duration="1900000" />
+      <workItem from="1667888453345" duration="89000" />
+      <workItem from="1667888833114" duration="1278000" />
+      <workItem from="1667908814435" duration="14221000" />
+      <workItem from="1668000224837" duration="12112000" />
+      <workItem from="1668091293916" duration="7432000" />
+      <workItem from="1668115367886" duration="894000" />
+      <workItem from="1668182756593" duration="725000" />
+      <workItem from="1668189216118" duration="7422000" />
+      <workItem from="1668239326441" duration="8103000" />
+      <workItem from="1668283807575" duration="425000" />
+      <workItem from="1668290898216" duration="651000" />
+      <workItem from="1668325464407" duration="4039000" />
+      <workItem from="1668366714600" duration="1189000" />
+      <workItem from="1668434206061" duration="5942000" />
+      <workItem from="1668462841009" duration="2963000" />
+      <workItem from="1668493653265" duration="1165000" />
+      <workItem from="1668545833512" duration="2299000" />
+      <workItem from="1668579189276" duration="1860000" />
+      <workItem from="1668605702208" duration="12568000" />
+      <workItem from="1668712336371" duration="1812000" />
+      <workItem from="1668792323095" duration="36000" />
+      <workItem from="1668792370352" duration="655000" />
+      <workItem from="1668795066099" duration="2468000" />
+      <workItem from="1668848276134" duration="12496000" />
+      <workItem from="1668933862356" duration="4823000" />
+      <workItem from="1668973876042" duration="3379000" />
+      <workItem from="1669012592421" duration="1173000" />
+      <workItem from="1669044816697" duration="11775000" />
+      <workItem from="1669098528436" duration="1265000" />
+      <workItem from="1669115117129" duration="11000" />
+      <workItem from="1669120886596" duration="8927000" />
+      <workItem from="1669130043657" duration="47000" />
+      <workItem from="1669133717609" duration="173000" />
+      <workItem from="1669305647760" duration="10481000" />
+      <workItem from="1669388075349" duration="2594000" />
+      <workItem from="1669477181933" duration="616000" />
+      <workItem from="1669656103714" duration="5158000" />
+      <workItem from="1669723089631" duration="6857000" />
+      <workItem from="1669797578115" duration="6197000" />
+      <workItem from="1669892686725" duration="6557000" />
+      <workItem from="1669992750307" duration="5657000" />
+      <workItem from="1670069624075" duration="9033000" />
+      <workItem from="1670153940941" duration="10590000" />
+      <workItem from="1670231978387" duration="10896000" />
+      <workItem from="1670318803582" duration="8832000" />
+      <workItem from="1670421409839" duration="5671000" />
+      <workItem from="1670577685904" duration="13271000" />
+      <workItem from="1670664589945" duration="8190000" />
+      <workItem from="1670793736023" duration="642000" />
+      <workItem from="1671223615901" duration="2301000" />
+      <workItem from="1671274647644" duration="7293000" />
+      <workItem from="1671312293005" duration="8571000" />
+      <workItem from="1671351879011" duration="25764000" />
+      <workItem from="1671460618979" duration="10289000" />
+      <workItem from="1671532597999" duration="1354000" />
+      <workItem from="1671546703272" duration="16000" />
+      <workItem from="1671548308911" duration="19000" />
+      <workItem from="1671729908265" duration="40000" />
+      <workItem from="1674393000474" duration="5199000" />
+      <workItem from="1674591824303" duration="884000" />
+      <workItem from="1674897786793" duration="3687000" />
+      <workItem from="1675075631169" duration="27000" />
+      <workItem from="1675094217070" duration="9000" />
+      <workItem from="1675355776142" duration="9711000" />
+      <workItem from="1675416880882" duration="8527000" />
+      <workItem from="1675501893203" duration="682000" />
+      <workItem from="1675689328082" duration="1813000" />
+      <workItem from="1675941884240" duration="18736000" />
+      <workItem from="1675977147977" duration="422000" />
+      <workItem from="1676041013794" duration="10130000" />
+      <workItem from="1676060869174" duration="1113000" />
+      <workItem from="1676066786757" duration="304000" />
+      <workItem from="1676100674115" duration="6967000" />
+      <workItem from="1676125302127" duration="1743000" />
+      <workItem from="1676299323288" duration="21000" />
+      <workItem from="1676313484894" duration="601000" />
+      <workItem from="1676316815739" duration="147000" />
+      <workItem from="1676401207169" duration="8409000" />
+      <workItem from="1676466957718" duration="12536000" />
+      <workItem from="1676493237306" duration="15000" />
+      <workItem from="1676570835040" duration="7355000" />
+      <workItem from="1676643978170" duration="1836000" />
+      <workItem from="1676650324196" duration="9342000" />
+      <workItem from="1676714661230" duration="6961000" />
+      <workItem from="1676725053160" duration="11081000" />
+      <workItem from="1676796052387" duration="8952000" />
+      <workItem from="1676820042802" duration="8112000" />
+      <workItem from="1676841462098" duration="1278000" />
+      <workItem from="1676913789056" duration="5423000" />
+      <workItem from="1676924669025" duration="353000" />
+      <workItem from="1677004225017" duration="7635000" />
+      <workItem from="1677074344264" duration="11979000" />
+      <workItem from="1677140794800" duration="4990000" />
+      <workItem from="1677154763664" duration="4614000" />
+      <workItem from="1677172383833" duration="2487000" />
+      <workItem from="1677177463596" duration="3030000" />
+      <workItem from="1677183641764" duration="1943000" />
+      <workItem from="1677251155789" duration="10564000" />
+      <workItem from="1677340064188" duration="11786000" />
+      <workItem from="1677360316655" duration="1366000" />
+      <workItem from="1677414669917" duration="1021000" />
+      <workItem from="1677606951536" duration="820000" />
+      <workItem from="1677611018668" duration="3429000" />
+      <workItem from="1677614575240" duration="42000" />
+      <workItem from="1677614692523" duration="5269000" />
+      <workItem from="1677679546587" duration="16286000" />
+      <workItem from="1677756971830" duration="12663000" />
+      <workItem from="1677793353476" duration="2286000" />
+      <workItem from="1677862991947" duration="7900000" />
+      <workItem from="1677877669992" duration="12026000" />
+      <workItem from="1679076118877" duration="5000" />
+      <workItem from="1679868147016" duration="1167000" />
+      <workItem from="1680390369290" duration="496000" />
+      <workItem from="1680430478610" duration="4216000" />
+      <workItem from="1680445293724" duration="44000" />
+      <workItem from="1680445409681" duration="102000" />
+      <workItem from="1680777623048" duration="1700000" />
+      <workItem from="1682339768234" duration="1091000" />
+      <workItem from="1683201732923" duration="2431000" />
+      <workItem from="1683227429061" duration="3360000" />
+      <workItem from="1683312983662" duration="390000" />
+      <workItem from="1683396087372" duration="364000" />
+      <workItem from="1685610502081" duration="76000" />
+      <workItem from="1686755484556" duration="7000" />
+      <workItem from="1686755502131" duration="14000" />
+      <workItem from="1686755517131" duration="4260000" />
+      <workItem from="1686816570480" duration="7044000" />
+      <workItem from="1687039856062" duration="626000" />
+      <workItem from="1687089996577" duration="1153000" />
+      <workItem from="1687111598418" duration="53000" />
+      <workItem from="1687117364421" duration="129000" />
+      <workItem from="1687167505253" duration="3486000" />
+      <workItem from="1687184422401" duration="19443000" />
+      <workItem from="1687247630467" duration="20611000" />
+      <workItem from="1687289541810" duration="730000" />
+      <workItem from="1687340689340" duration="6371000" />
+      <workItem from="1687368884033" duration="10300000" />
+      <workItem from="1687420561822" duration="3752000" />
+      <workItem from="1687426827107" duration="8178000" />
+      <workItem from="1687468647864" duration="2363000" />
+      <workItem from="1687516159594" duration="2427000" />
+      <workItem from="1687604249960" duration="16940000" />
+      <workItem from="1687680790939" duration="677000" />
+      <workItem from="1687688358860" duration="26000" />
+      <workItem from="1687764962452" duration="297000" />
+      <workItem from="1688068743510" duration="5000" />
+      <workItem from="1688068750126" duration="4007000" />
+      <workItem from="1691054178869" duration="42000" />
+      <workItem from="1692602367779" duration="1701000" />
+      <workItem from="1692604198497" duration="1640000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_menu/tests.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_menu/views.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_menu/views.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_menu/views.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/api/permissions.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/broccoli$async_python.coverage" NAME="async_python Coverage Results" MODIFIED="1680445412703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
+    <SUITE FILE_PATH="coverage/manage_py$test_main_menu.coverage" NAME="test_main_menu Coverage Results" MODIFIED="1686822913591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/manage_py$manage.coverage" NAME="manage Coverage Results" MODIFIED="1692605749938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/broccoli$wdwd.coverage" NAME="wdwd Coverage Results" MODIFIED="1683396409448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates" />
+    <SUITE FILE_PATH="coverage/broccoli$api.coverage" NAME="api Coverage Results" MODIFIED="1676724514014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../AppsAPI" />
+    <SUITE FILE_PATH="coverage/manage_py$async_python.coverage" NAME="async_python Coverage Results" MODIFIED="1686822919403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
+    <SUITE FILE_PATH="coverage/broccoli$manage.coverage" NAME="manage Coverage Results" MODIFIED="1680778013929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

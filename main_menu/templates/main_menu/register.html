@@ -1,0 +1,24 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block header %}Register{% endblock %}
+{% block content %}
+    <form method="post" class="login-form">
+    <h1 style="text-align: center; padding-bottom: 10px;">Register</h1>
+    {% csrf_token %}
+    {% for field in form %}
+        <div class="validation-error" style="list-style-type: none; color: red">
+                {{ field.errors }}
+        </div>
+        <div class="mb-4 form-floating">
+            {{ field }}
+        {% if field.name != 'captcha' %}
+            {{ field.label_tag }}
+        {% endif %}
+        </div>
+    {% endfor %}
+    <div class="d-grid gap-2 col-5 mx-auto">
+        <button type="submit" class="btn btn-primary btn-lg">Register</button>
+    </div>
+    </form>
+    <script src="{% static 'main_menu/js/form_styler.js' %}"></script>
+{% endblock %}

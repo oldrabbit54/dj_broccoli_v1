@@ -1,0 +1,101 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block header %}
+    New event
+{% endblock %}
+
+{% block head_sources %}
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/light.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/dark.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'events/css/timepicker.css' %}">
+    <script src="{% static 'events/js/timepicker.js'%}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js" defer></script>
+
+{% endblock %}
+{% block content %}
+    <form method="post" class="login-form">
+        <h1 style="text-align: center;">Event</h1>
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="validation-error" style="list-style-type: none; color: red">
+                    {{ field.errors }}
+            </div>
+            <div class="mb-4 form-floating">
+                {{ field }}
+            {% if field.name != 'expire_time' %}
+                {{ field.label_tag }}
+            {% endif %}
+                {% if field.name == 'expire_time_hours' %}
+                    <div class="timepicker_container" style="display: none">
+
+                    </div>
+                {% endif %}
+
+            </div>
+        {% endfor %}
+        <div class="d-grid gap-2 col-3 mx-auto">
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+
+    </form>
+    <script src="{% static 'main_menu/js/form_styler.js' %}"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            let time_container = document.querySelector('.timepicker_container');
+            time_container.style.marginTop = '5px';
+            time_container.style.width = '70%';
+            const timepicker = new Timepicker({
+            container: time_container, // container
+            onChange: onChange, // callback
+
+            clock: 24,
+            minuteStep: 15,
+          });
+            let expire_time_input = document.querySelector('input[name=expire_time_hours]').closest('div');
+            expire_time_input.addEventListener('focusin', (event) => {
+                time_container.style.display = 'block';
+            })
+            console.log(expire_time_input.closest('div'));
+            expire_time_input.closest('div').addEventListener('focusout', (event) => {
+                console.log(event)
+                //time_container.style.display = 'none';
+            })
+          // get a Date object as parameter to work with
+          function onChange (date) {
+              let [hours, minutes] = [date.getHours().toString(), date.getMinutes().toString()]
+              if(hours.length === 1)
+                  hours = '0' + hours
+              if(minutes.length === 1)
+                  minutes = '0' + minutes
+              document.querySelector("input[name=expire_time_hours]").value = hours + ":" + minutes;
+          }
+        const options = {
+          input: true,
+          actions: {
+            changeToInput(e, HTMLInputElement, dates, time, hours, minutes, keeping) {
+              if (dates[0]) {
+                HTMLInputElement.value = dates[0];
+                // if you want to hide the calendar after picking a date
+                calendar.HTMLElement.classList.add('vanilla-calendar_hidden');
+                HTMLInputElement.style.marginBottom = '10px';
+              } else {
+                HTMLInputElement.value = '';
+              }
+            },
+          },
+        };
+        const calendar = new VanillaCalendar('#id_expire_time', options);
+        calendar.init();
+
+        let date_input = document.querySelector('#id_expire_time');
+            date_input.style.height = '55px';
+        date_input.addEventListener('focusin', (event) => {
+            event.target.style.marginBottom = '280px';
+        })
+        });
+
+
+    </script>
+{% endblock %}

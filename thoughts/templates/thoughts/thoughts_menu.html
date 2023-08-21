@@ -1,0 +1,9 @@
+{% extends 'base_template.html' %}
+{% block header %}Thoughts{% endblock %}
+{% block content %}
+    <h1 style="text-align: center">Your deepest thoughts and secrets!</h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <a href="{% url 'note-create' %}" class="btn btn-success me-lg-2 btn-lg" type="button">Add a note!</a>
+        <a href="{% url 'posts-preview' %}" class="btn btn-info btn-lg" type="button">See existing posts!</a>
+    </div>
+{% endblock %}

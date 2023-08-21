@@ -1,0 +1,73 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block header %}Feed{% endblock %}
+{% block content %}
+    {% include 'thoughts/includes/posts_sidebar.html' %}
+    {% for post in posts %}
+        {% include 'thoughts/post_template.html' %}
+    {% endfor %}
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script>
+    "use strict"
+        let send_buttons = document.querySelectorAll('.comment-form a');
+        for(let button of send_buttons){
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const csrftoken = Cookies.get('csrftoken');
+                const comment_xhr = new XMLHttpRequest();
+                comment_xhr.responseType = 'json';
+                const url = new URL(button.href);
+                let note = url.searchParams.get('note_id');
+                let text = button.closest('form').querySelector('input').value;
+                let comment_data = {
+                    note,
+                    text
+                };
+                comment_xhr.open('POST', button.href);
+                console.log(csrftoken, comment_data);
+                comment_xhr.setRequestHeader("Content-type", "application/json");
+                comment_xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                comment_xhr.send(JSON.stringify(comment_data));
+                comment_xhr.onload = () => {
+                    let new_comment = document.createElement('div');
+                    let new_comment_avatar = document.createElement('img');
+                    new_comment_avatar.src = '{{ this_user.avatar.url }}';
+                    new_comment_avatar.classList.add('small-avatar-comment');
+                    console.log(comment_xhr.response);
+                    let date = new Date(comment_xhr.response['time_create']);
+                    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                    let dt = [date.getDay(),
+                        date.getFullYear(),
+                        date.getHours(),
+                        date.getMinutes(),
+                        date.getMonth()
+                    ];
+                    for(let dt_elem = 0; dt_elem < 4;dt_elem++){
+                        if(dt[dt_elem] < 10)
+                            dt[dt_elem] = '0' + dt[dt_elem];
+                    }
+                    new_comment.innerHTML = `
+                        <span>{{ this_user.first_name }} {{ this_user.last_name }}</span>
+                        <p class="post-time" style="display: inline">
+                        ${dt[0]}
+                        ${months[dt[4]]},
+                        ${dt[2]}:${dt[3]}
+                        </p>
+                        <p>${comment_xhr.response['text']}</p>`;
+                    new_comment.classList.add('comment-post');
+                    button.closest('form').before(new_comment);
+                    new_comment.after(document.createElement('hr'));
+                    new_comment.before(new_comment_avatar);
+
+
+                }
+
+
+
+
+
+            });
+        }
+    </script>
+    <script src="{% static 'main_menu/js/form_styler.js' %}"></script>
+{% endblock %}

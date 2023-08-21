@@ -1,0 +1,22 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block header %}Note{% endblock %}
+{% block content %}
+    <form method="post" class="login-form">
+        <h1 style="text-align: center;">Leave a note!</h1>
+        {% csrf_token %}
+        {% for field in form %}
+            <div class="validation-error" style="list-style-type: none; color: red">
+                    {{ field.errors }}
+            </div>
+            <div class="mb-4 form-floating">
+                {{ field }}
+                {{ field.label_tag }}
+            </div>
+        {% endfor %}
+        <div class="d-grid gap-2 col-3 mx-auto">
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+    </form>
+    <script src="{% static 'main_menu/js/form_styler.js' %}"></script>
+{% endblock %}

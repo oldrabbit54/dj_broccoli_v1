@@ -1,0 +1,23 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block header %}Login{% endblock %}
+{% block content %}
+    <form method="post" class="login-form">
+    <h1 style="text-align: center; padding-bottom: 10px;">Login</h1>
+    {% csrf_token %}
+    {% for field in form %}
+        <div class="validation-error" style="list-style-type: none; color: red">
+                {{ field.errors }}
+        </div>
+        <div class="mb-4 form-floating">
+            {{ field }}
+            {{ field.label_tag }}
+        </div>
+    {% endfor %}
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 30%">Log in</button>
+        <a href="{% url 'vk-login' %}" type="submit" class="btn btn-primary btn-lg" style="width: 30%;background-color: #2b3035;">Log in via VK</a>
+    </div>
+    </form>
+    <script src="{% static 'main_menu/js/form_styler.js' %}"></script>
+{% endblock %}

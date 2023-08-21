@@ -1,0 +1,28 @@
+{% extends 'base_template.html' %}
+
+{% block header %}Collection{% endblock %}
+
+{% block content %}
+    <h1>Enjoy</h1>
+    <div class="image_display">
+    <ul class = 'gallery_list_mapping'>
+    {% for image in images %}
+        <li><img src="{{ image.image.url }}" alt="" width="400" height="400"></li>
+    {% endfor %}
+    </ul>
+    </div>
+    <div class="pagination">
+    <ul>
+        {% for p in paginator.page_range %}
+            <a href="?page={{ p }}" class="paginator_refs">{{ p }}</a>
+
+        {% endfor %}
+    {% if page_obj.has_previous %}
+            <a href="?page={{ page_obj.previous_page_number }} " class="paginator_refs">Previous</a>
+        {% endif %}
+    {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }} " class="paginator_refs">Next</a>
+        {% endif %}
+    </ul>
+    </div>
+{% endblock %}

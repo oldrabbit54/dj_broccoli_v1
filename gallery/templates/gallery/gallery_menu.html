@@ -1,0 +1,9 @@
+{% extends 'base_template.html' %}
+{% block header %}Gallery{% endblock %}
+{% block content %}
+    <h1>Contain all of your memorable photos here!</h1>
+    <div class="option_button">
+        <a href="{% url 'gallery-image-add' %}" class='note_addition_button'>Add an image</a>
+        <a href="{% url 'gallery-image-collection' %}" class='note_addition_button'>See all images</a>
+    </div>
+{% endblock %}

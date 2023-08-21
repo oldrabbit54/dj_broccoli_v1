@@ -1,0 +1,131 @@
+{% extends 'base_template.html' %}
+{% load static %}
+
+
+{% block head_sources %}
+    <!-- Plugin CSS -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Calendar</title>
+            <link rel="shortcut icon" type="image/x-con" href="{% static 'main_menu/images/broc.ico' %}"/>
+            <link rel="stylesheet" type="text/css" href="{% static 'main_menu/css/bootstrap.min.css' %}">
+            <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/light.min.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/themes/dark.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="{% static 'events/css/calendar_css.css' %}">
+            <script src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar/build/vanilla-calendar.min.js" defer></script>
+
+{% endblock %}
+{% block content %}
+    <div class="calendar-wrapper">
+        <div id="calendar"></div>
+        <div class="event-filters">
+            <a id="cat_fwd" class="btn btn-info btn-lg" style="width:175px">Category</a>
+            <a id="add_rec_fwd" class="btn btn-info btn-lg" style="margin-left: 10px;width:175px">Added recently</a>
+            <a id="soon_fwd" class="btn btn-info btn-lg" style="margin-left: 10px;width:175px">
+                Sooner/Later
+            </a>
+        </div>
+    </div>
+    <hr style="width: 94%; margin-left: 75px; color: black">
+    <a href="{% url 'event-create' %}" class="event-add btn btn-primary btn-lg">New Note</a>
+    <h1 class="event-list-header">Pending({% if events_number %}{{ events_number }}{% else %}0{% endif %}): </h1>
+    <div class="events-list">
+        {% for event in events %}
+            <div class="event-element" style = "border: 2px solid {{ event.cat.color }}">
+                <span class="event-title">{{ event.title }}:</span>
+                <br>
+                <span class="event-body">{{ event.body }}</span>
+                <span class="event-date">
+                    {{ event.expire_time_hours|date:"H:i" }},
+                    {{ event.expire_time|date:"j F, Y" }}
+                </span>
+            </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const options = {
+          actions: {
+              clickDay(event, dates) {
+                  let url = new URL("http://127.0.0.1:1970/events");
+                  url.searchParams.append('date', `${dates}`);
+                  window.location.replace(url.href);
+              },
+          }
+        }
+        const calendar = new VanillaCalendar('#calendar', options);
+        calendar.init();
+        let event_filters = document.querySelectorAll('.event-filters a')
+        for(let filter of event_filters){
+            filter.addEventListener('click',
+                (event) => {
+                    let url = new URL(window.location.href)
+                    let id = event.target.id//clicked filter name
+                    let filters = url.searchParams.getAll('filter');
+                    //console.log('filters before:', filters, id);
+                    if(id === 'cat_fwd'){
+                        let index1 = filters.indexOf('cat_fwd');
+                        let index2 = filters.indexOf('cat_rev');
+                        if(index1 !== -1) {
+                            filters.splice(index1, 1);
+                            filters.push('cat_rev');
+                        }
+                        else if(index2 !== -1) {
+                            filters.splice(index2, 1);
+                            filters.push('cat_fwd');
+                        }
+                        else {
+                            filters.push('cat_fwd');
+                        }
+                    }
+                    if(id === 'add_rec_fwd'){
+                        let index1 = filters.indexOf('add_rec_fwd');
+                        let index2 = filters.indexOf('add_rec_rev');
+                        if(index1 !== -1) {
+                            filters.splice(index1, 1);
+                            filters.push('add_rec_rev');
+                        }
+                        else if(index2 !== -1) {
+                            filters.splice(index2, 1);
+                            filters.push('add_rec_fwd');
+                        }
+                        else {
+                            filters.push('add_rec_fwd');
+                        }
+                    }
+                    if(id === 'soon_fwd'){
+                        let index1 = filters.indexOf('soon_fwd');
+                        let index2 = filters.indexOf('soon_rev');
+                        if(index1 !== -1) {
+                            filters.splice(index1, 1);
+                            filters.push('soon_rev');
+                        }
+                        else if(index2 !== -1) {
+                            filters.splice(index2, 1);
+                            filters.push('soon_fwd');
+                        }
+                        else {
+                            filters.push('soon_fwd');
+                        }
+                    }
+                    url.searchParams.delete('filter')
+                    for(filter of filters){
+                        url.searchParams.append('filter', filter);
+                    }
+                    console.log(url.searchParams.getAll('filter'))
+                    window.location.replace(url.href);
+                }
+            )
+        }
+
+
+
+
+
+      });
+
+    </script>
+    {% endblock %}
+

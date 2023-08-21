@@ -1,0 +1,46 @@
+{% load static %}
+<div id="carouselCategory" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCategory" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCategory" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCategory" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <a href="{% url 'posts-preview' %}"><img src="{% static 'main_menu/images/lnRl9X_qjbA.jpg' %}" class="d-block w-100" alt="thoughts"></a>
+          <div class="carousel-caption d-none d-md-block">
+              <h3>Thoughts</h3>
+              <p>Share your thoughts and desires with others!</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <a href="{% url 'gallery' %}"><img src="{% static 'main_menu/images/1630189604_12-krasivosti-pro-p-karlikovaya-kapibara-zhivotnie-krasivo-fot-12.jpg' %}" class="d-block w-100" alt="gallery"></a>
+          <div class="carousel-caption d-none d-md-block">
+              <h3>Gallery</h3>
+              <p>Share your wonderful pictures to others!</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <a href="{% url 'my_profile_edit' %}"><img src="{% static 'main_menu/images/img_1.png' %}" class="d-block w-100" alt="profile"></a>
+          <div class="carousel-caption d-none d-md-block">
+              <h3>Profile</h3>
+              <p>Tell us about yourself!</p>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategory" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselCategory" data-bs-slide="next" >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script>
+    let p_desc = document.querySelectorAll('.carousel-item p')
+    for(let p of p_desc){
+        p.style.fontSize = "20px";
+    }
+</script>

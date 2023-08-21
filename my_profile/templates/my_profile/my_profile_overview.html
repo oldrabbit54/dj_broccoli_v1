@@ -1,0 +1,31 @@
+{% extends 'base_template.html' %}
+{% block header %}Profile{% endblock %}
+{% block content %}
+    <h1>Your profile: </h1>
+    <form method="get" class="profile_form">
+        <h2>Avatar: </h2>
+    <img src="{{ img_url }}" alt="belka" height="100" width="100" class="ava-display">
+        <h2>First name:</h2>
+         <p>{{ profile_object.first_name }}</p>
+        <h2>Last name:</h2>
+        <p>
+            {% if profile_object.last_name %}
+                {{ profile_object.last_name }}
+                {% else %}
+                -
+            {% endif %}
+        </p>
+        <h2>Email:</h2>
+        <p>{{ user_note.email }}</p>
+        <h2>Bio:</h2>
+        {% if profile_object.bio %}
+        <p>{{ profile_object.bio }}</p>
+        {% else %}
+            <p>We know nothing about you!</p>
+        {% endif %}
+        <div class="profile_edit_goto">
+            <a href="{% url 'my_profile_edit' profile_object.id %}">Edit</a>
+        </div>
+    </form>
+
+{% endblock %}

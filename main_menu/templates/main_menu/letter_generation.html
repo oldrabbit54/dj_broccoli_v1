@@ -1,0 +1,7 @@
+{% extends 'base_template.html' %}
+{% block header %}Confirmation{% endblock %}
+{% block content %}
+    Hello, <b>{{ user.username }}</b>!
+    Finish your registration <a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}">right now.</a>
+
+{% endblock %}

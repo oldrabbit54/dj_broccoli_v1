@@ -1,0 +1,187 @@
+h1 {
+    font-weight: bold;
+    color: #32cd32;
+    text-align: center;
+    font-size: 45px;
+}
+.features {
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    font-size: 30px;
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 10px;
+    width: 450px;
+    list-style-type: none;
+
+}
+.link_no_underline {
+    text-decoration: none;
+    color: black;
+}
+.link_no_underline:hover {
+    color: darkred;
+}
+
+.category {
+    color: rebeccapurple;
+    font-size: 40px;
+}
+ul.nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgrey;
+}
+
+ul.nav_bar li {
+    float: left;
+}
+
+
+ul.nav_bar li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: "Brush Script MT", cursive;
+}
+ul.nav_bar li.login_related {
+    float: right;
+}
+ul.nav_bar li a:hover {
+    background-color: darkred;
+}
+
+
+a.active {
+    background-color: #32cd32;
+}
+
+.thoughts_caption {
+    font-family: "Lucida Handwriting", cursive;
+    color: rebeccapurple;
+    font-size: 40px;
+}
+
+.posts_table th, .posts_table td{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-align: center;
+    color: black;
+    border: 1px solid grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.posts_table th {
+    background-color: #04AA6D;
+}
+.posts_table td {
+    color: black;
+    font-size: 18px;
+}
+.posts_table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 8px auto;
+}
+
+.posts_ref {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.posts_ref:hover {
+    color: darkred;
+}
+.posts_table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+a.paginator_refs {
+    background-color: limegreen;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+
+}
+a.paginator_refs:hover {
+    background-color: darkred;
+}
+.pagination {
+    margin: 20px auto;
+}
+.note_addition_button {
+    background-color: limegreen;
+    padding: 14px 25px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+.note_addition_button:hover{
+    background-color: darkred;
+}
+.to_home {
+    text-align: center;
+    background-color: rebeccapurple;
+    margin: auto;
+}
+
+form {
+    background-color: #90ee90;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+label {
+    font-family: "Brush Script MT", cursive;
+    font-size: 20px;
+}
+input[type=text], textarea, input[type=file] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+button[type=submit] {
+  width: 100%;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+    background-color: darkred;
+}
+
+button[type=submit]:active {
+    background-color: green;
+}
+
+textarea {
+    resize: none;
+}
+
+ul.gallery_list_mapping {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+}
+ul.gallery_list_mapping li {
+    float: left;
+    margin: 15px auto;
+    text-align: center;
+}
+
